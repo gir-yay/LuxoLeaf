@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    height: 10%;
+    background-color: #2C0034;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    margin: 0 20px;
+    display: inline-block;
+    color: #FFD700;
+}
+
+a {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+.img {
+    width: 5%;
+}
+
+.main_product {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #370041;
+}
+
+.representative_txt {
+    color: white;
+    width: 60%;
+}
+
+.notebook_img {
+    width: 40%;
+}
+
+.notebook1 {
+    width: 100%;
+}
+
+.slogan {
+    color: white;
+    font-size: 2em;
+    margin: 25% 0 0 10%;
+    font-family: serif;
+}
+
+#main_word {
+    font-size: 6.5rem;
+    color: #FFD700;
+    display: block;
+    font-family: Helvetica;
+}
+
+.para {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 25%;
+    font-size: 1.5em;
+    color: rgb(199, 191, 191);
+    font-family: serif;
+}
+
+#ss {
+    color: #370041;
+}
+
+.btn {
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #370041;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+
+.paper_heading {
+    color: white;
+    font-size: 2.5em;
+    margin-left: 5%;
+    padding: 5%;
+}
+
+.paper_type {
+    background-color: #2e0136;
+    color: white;
+}
+
+.paper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paper_name {
+    color: white;
+    font-size: 1.5em;
+    padding: 5%;
+    text-align: center;
+
+}
+
+.contact {
+    background-color: #1c0121;
+    color: white;
+    padding: 5%;
+}
+
+.contact_heading {
+    font-size: 2.5em;
+    padding-bottom: 5%;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border-color: #FFD700;
+    border-radius: 5px;
+    display: block;
+    background-color: #1c0121;
+    color: white;
+    width: 50%;
+}
+
+select {
+    padding: 10px;
+    margin: 10px 0;
+    border-color: #FFD700;
+    border-radius: 5px;
+    display: block;
+    background-color: #1c0121;
+    color: white;
+    width: 50%;
+
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-color: #FFD700;
+    border-radius: 5px;
+    display: block;
+    background-color: #1c0121;
+    color: white;
+    width: 50%;
+}
+
+.icon_up {
+    background-color: #1c0121;
+}
+
+#arrow {
+    margin-left: 93%;
+}
+
+.footer {
+    background-color: #FFD700;
+    color: #370041;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    font-weight: bold;
+}
+
+.footer_para {
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+
+    li {
+        margin: 0 10px;
+    }
+
+    .slogan {
+
+        margin: 15% 0 0 5%;
+        font-size: 1em;
+    }
+
+    #main_word {
+        font-size: 3.3em;
+    }
+
+    .para {
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 10px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    textarea {
+        width: 70%;
+    }
+
+    select {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    li {
+        margin: 0 10px;
+    }
+
+    .slogan {
+        font-size: 10px;
+        margin: 15% 0 0 5%;
+    }
+
+    #main_word {
+        font-size: 33px;
+    }
+
+    .para {
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 8px;
+    }
+
+    .btn {
+        margin-left: 5%;
+        font-size: 10px;
+    }
+
+    .paper_heading {
+        font-size: 1.5em;
+        margin-left: 10px;
+        padding: 5%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+    li {
+        margin: 0 5px;
+    }
+
+    .slogan {
+        font-size: 8px;
+        margin: 15% 0 0 0;
+    }
+
+    #main_word {
+        font-size: 26px;
+    }
+
+    .para {
+        margin-top: 5%;
+        margin-left: 0;
+        font-size: 8px;
+    }
+
+}
