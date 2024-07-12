@@ -1,7 +1,13 @@
 * {
+    font-family: 'Open Sans';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
 
 }
 
@@ -9,13 +15,22 @@ header {
     height: 10%;
     background-color: #2C0034;
     display: flex;
+
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     width: 100%;
+    position: fixed;
+    height: 10%;
+    background-color: #2C0034;
+
+
+}
+
+ul {
+    margin-left: 55%;
 }
 
 li {
@@ -23,6 +38,7 @@ li {
     margin: 0 20px;
     display: inline-block;
     color: #FFD700;
+
 }
 
 a {
@@ -34,10 +50,20 @@ a {
     width: 5%;
 }
 
+main {
+    background-image: url('../images/BGimg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    ;
+}
+
 .main_product {
     display: flex;
     flex-wrap: wrap;
-    background-color: #370041;
+
 }
 
 .representative_txt {
@@ -45,26 +71,31 @@ a {
     width: 60%;
 }
 
+
 .notebook_img {
     width: 40%;
+
 }
 
 .notebook1 {
-    width: 100%;
+    width: 40%;
+    margin-top: 5%;
+    position: fixed;
 }
 
 .slogan {
     color: white;
-    font-size: 2em;
+    font-size: 2.08em;
     margin: 25% 0 0 10%;
-    font-family: serif;
+    font-family: 'Open Sans';
 }
 
 #main_word {
-    font-size: 6.5rem;
+    font-size: 8.4rem;
     color: #FFD700;
     display: block;
-    font-family: Helvetica;
+    font-family: serif;
+
 }
 
 .para {
@@ -73,11 +104,29 @@ a {
     margin-right: 25%;
     font-size: 1.5em;
     color: rgb(199, 191, 191);
-    font-family: serif;
+    font-family: 'Open Sans';
+}
+
+.para2 {
+
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 25%;
+    font-size: 1.5em;
+    color: rgb(199, 191, 191);
+    font-family: 'Open Sans';
 }
 
 #ss {
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 10px 20px;
+    background-color: #FFD700;
     color: #370041;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 .btn {
@@ -90,19 +139,32 @@ a {
     border-radius: 5px;
     font-size: 1.5em;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 
+}
+
+#ss:hover {
+    color: #FFD700;
+    background-color: #370041;
+}
+
+.btn:hover {
+    color: #FFD700;
+    background-color: #370041;
 }
 
 .paper_heading {
     color: white;
     font-size: 2.5em;
-    margin-left: 5%;
-    padding: 5%;
+    margin-left: 0%;
+    padding-bottom: 5%;
 }
 
 .paper_type {
-    background-color: #2e0136;
+
     color: white;
+    width: 50%;
+    padding: 5%;
 }
 
 .paper {
@@ -110,6 +172,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .paper_name {
@@ -117,13 +180,19 @@ a {
     font-size: 1.5em;
     padding: 5%;
     text-align: center;
+    margin-top: 15px;
 
 }
 
 .contact {
-    background-color: #1c0121;
+
     color: white;
     padding: 5%;
+    width: 50%;
+}
+
+form {
+    margin-left: 20%;
 }
 
 .contact_heading {
@@ -137,9 +206,9 @@ input {
     border-color: #FFD700;
     border-radius: 5px;
     display: block;
-    background-color: #1c0121;
+    background-color: transparent;
     color: white;
-    width: 50%;
+    width: 80%;
 }
 
 select {
@@ -148,10 +217,15 @@ select {
     border-color: #FFD700;
     border-radius: 5px;
     display: block;
-    background-color: #1c0121;
+    background-color: transparent;
     color: white;
-    width: 50%;
+    width: 80%;
 
+}
+
+select option {
+    background-color: #370041;
+    color: white;
 }
 
 textarea {
@@ -160,17 +234,17 @@ textarea {
     border-color: #FFD700;
     border-radius: 5px;
     display: block;
-    background-color: #1c0121;
+    background-color: transparent;
     color: white;
-    width: 50%;
+    width: 80%;
 }
 
 .icon_up {
-    background-color: #1c0121;
+    background-color: transparent;
 }
 
 #arrow {
-    margin-left: 93%;
+    margin-left: 0%;
 }
 
 .footer {
@@ -179,12 +253,125 @@ textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     height: 15%;
     font-weight: bold;
 }
 
 .footer_para {
     padding: 20px;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+
+li:hover {
+    animation: wiggle 0.5s infinite;
+}
+
+@keyframes turn-around {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the turn-around animation on hover */
+#arrow:hover {
+    animation: turn-around 0.6s ease-in-out;
+}
+
+/*slide show*/
+.slides input[type="radio"] {
+    display: none;
+}
+
+.slides figure {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.slides input[type="radio"]:checked+figure {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* (PART B) SLIDES WRAPPER & SHARED*/
+.slides {
+    position: relative;
+    max-width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.slides img,
+.slides label {
+    position: absolute;
+}
+
+.slides label {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* (PART C) SLIDE IMAGES */
+.slides img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* (PART E) LAST & NEXT BUTTONS */
+.slides label {
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.slides label.last {
+    left: 10px;
+}
+
+.slides label.next {
+    right: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -194,10 +381,57 @@ textarea {
         margin: 0 10px;
     }
 
-    .slogan {
+    .img {
+        width: 7%;
+    }
 
-        margin: 15% 0 0 5%;
-        font-size: 1em;
+    ul {
+
+        margin-left: 30%;
+    }
+
+    main {
+        background-image: url('../images/BGrespo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        width: 100%;
+        ;
+    }
+
+    .representative_txt {
+        color: white;
+        width: 100%;
+    }
+
+    .contact {
+
+        color: white;
+        padding: 5%;
+        width: 100%;
+    }
+
+    .paper_type {
+
+        color: white;
+        width: 100%;
+        padding: 5%;
+    }
+
+    /*
+#paper_img {
+    width: 70%;
+}
+
+#paper_img2 {
+    width: 70%;
+}*/
+
+    /*   .slogan {
+
+        margin: 35% 0 0 5%;
+        font-size: 1.02em;
     }
 
     #main_word {
@@ -220,8 +454,10 @@ textarea {
 
     select {
         width: 70%;
-    }
+        }
+*/
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -230,19 +466,40 @@ textarea {
         margin: 0 10px;
     }
 
+    .img {
+        width: 10%;
+    }
+
+    main {
+        background-color: #370041;
+    }
+
+    .representative_txt {
+        color: white;
+        width: 100%;
+    }
+
+
+
     .slogan {
         font-size: 10px;
-        margin: 15% 0 0 5%;
+        margin: 35% 0 0 5%;
     }
 
     #main_word {
-        font-size: 33px;
+        font-size: 66px;
     }
 
     .para {
         margin-top: 5%;
         margin-left: 5%;
-        font-size: 8px;
+        font-size: 12px;
+    }
+
+    .para2 {
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 12px;
     }
 
     .btn {
@@ -257,17 +514,18 @@ textarea {
     }
 
     input {
-        width: 100%;
+        width: 80%;
     }
 
     select {
-        width: 100%;
+        width: 80%;
 
     }
 
     textarea {
-        width: 100%;
+        width: 80%;
     }
+
 
 }
 
@@ -278,6 +536,16 @@ textarea {
         margin: 0 5px;
     }
 
+    .img {
+        width: 15%;
+    }
+
+    ul {
+
+        margin-left: 20%;
+    }
+
+    /*
     .slogan {
         font-size: 8px;
         margin: 15% 0 0 0;
@@ -292,5 +560,5 @@ textarea {
         margin-left: 0;
         font-size: 8px;
     }
-
+*/
 }
